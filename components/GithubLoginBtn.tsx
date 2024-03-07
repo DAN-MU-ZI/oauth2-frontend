@@ -1,6 +1,6 @@
-export default function KakaoLoginBtn() {
+export default function GithubLoginBtn() {
     const handleLogin = () => {
-        const redirectUri = 'http://localhost:8080/oauth2/authorization/kakao?redirect_uri=http://localhost:3000/oauth/redirect';
+        const redirectUri = 'http://localhost:8080/oauth2/authorization/github?redirect_uri=http://localhost:3000/oauth/redirect';
         console.log(redirectUri);
         if (redirectUri) {
             window.location.href = redirectUri;
@@ -9,7 +9,7 @@ export default function KakaoLoginBtn() {
 
     return (
         <button onClick={handleLogin}>
-        카카오 로그인
+        깃허브 로그인
         </button>
     );
 }

@@ -1,7 +1,7 @@
 "use client";
+import GithubLoginBtn from "@/components/GithubLoginBtn";
 import GoogleLoginBtn from "@/components/GoogleLoginBtn";
 import KakaoLoginBtn from "@/components/KakaoLoginBtn";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +9,8 @@ export default function Home() {
       <GoogleLoginBtn/>
       <div/>
       <KakaoLoginBtn/>
+      <div/>
+      <GithubLoginBtn/>
     </div>
   );
 }
