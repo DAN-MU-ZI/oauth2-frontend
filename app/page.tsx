@@ -1,16 +1,15 @@
-"use client";
-import GithubLoginBtn from "@/components/GithubLoginBtn";
-import GoogleLoginBtn from "@/components/GoogleLoginBtn";
-import KakaoLoginBtn from "@/components/KakaoLoginBtn";
+import Link from 'next/link';
+import React from 'react';
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
     <div>
-      <GoogleLoginBtn/>
-      <div/>
-      <KakaoLoginBtn/>
-      <div/>
-      <GithubLoginBtn/>
+      <h1>Welcome to the Homepage!</h1>
+      <button>
+        <Link href="/login">Login</Link>
+      </button>
     </div>
   );
-}
+};
+
+export default HomePage;
